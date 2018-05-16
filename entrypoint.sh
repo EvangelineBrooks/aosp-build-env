@@ -43,11 +43,11 @@ readonly SOURCE_DIR="$(pwd)"
 
 readonly USERNAME="aosp"
 groupadd \
-	--gid "${GROUP_ID:=1000}" \
+	--gid "${GROUP_ID:=0}" \
 	"${USERNAME}"
 useradd \
 	--gid "${USERNAME}" \
-	--uid "${USER_ID:=1000}" \
+	--uid "${USER_ID:=0}" \
 	--create-home \
 	"${USERNAME}"
 
